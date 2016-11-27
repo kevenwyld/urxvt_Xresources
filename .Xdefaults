@@ -1,0 +1,95 @@
+!!!!!!!!Everything is in the following manpages, look it up!:
+!!!!!!!!man urxvt-searchable-scrollback
+!!!!!!!!man urxvtperl
+!!!!!!!!man urxvt
+
+!This colorscheme is as close as I could get it to the terminator
+!solarized dark theme. The transparent background has a different
+!tint though since the original color #001918 looked really weird
+!in urxvt for some reason.
+
+!black
+#define S_black #2E3030
+#define S_bright_black #555753
+!red
+#define S_red #CC0000
+#define S_bright_red #EF2929
+!green
+#define S_green #4E9A06
+#define S_bright_green #8AE234
+!yellow
+#define S_yellow #C4A000
+#define S_bright_yellow #FCE94F
+!blue
+#define S_blue #3465A4
+#define S_bright_blue #729FCF
+!magenta
+#define S_magenta #75507B
+#define S_bright_magenta #AD7FA8
+!cyan
+#define S_cyan #06989A
+#define S_bright_cyan #34E2E2
+!white
+#define S_white #D3D7CF
+#define S_bright_white #EEEEEC
+!background
+!#define S_background #002B36
+#define S_background #047896
+
+URxvt*reverseVideo: True
+URxvt*transparent: True
+!URxvt*shading: 20
+URxvt*shading: 50
+URxvt*depth: 32
+URxvt*tintColor: S_background
+URxvt*scrollBar: False
+URxvt*externalBorder: 0
+!URxvt*lineSpace: 2
+URxvt*fading: 15
+URxvt*intensityStyles: True
+
+URxvt.iso14755: False
+URxvt.perl-ext-common: default,matcher,url-select
+URxvt.url-launcher: /usr/bin/xdg-open
+urxvt.matcher.button: C1
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.keysym.M-s: searchable-scrollback:start
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+URxvt.saveLines: 1000000
+URxvt.pointerBlank: True
+
+URxvt.font:     xft:Source Code Pro Medium:size=12:antialias=true
+URxvt.boldFont: xft:Source Code Pro Medium:bold:size=12:antialias=true
+
+*background: S_white
+*foreground: S_black
+*fadeColor: S_bright_black
+*cursorColor: S_bright_cyan
+*pointerColorBackground: S_bright_green
+*pointerColorForeground: S_bright_cyan
+
+!! black dark/light
+*color0:                S_black
+*color8:                S_bright_black
+!! red dark/light
+*color1:                S_red
+*color9:                S_bright_red
+!! green dark/light
+*color2:                S_green
+*color10:               S_bright_green
+!! yellow dark/light
+*color3:                S_yellow
+*color11:               S_bright_yellow
+!! blue dark/light
+*color4:                S_blue
+*color12:               S_bright_blue
+!! magenta dark/light
+*color5:                S_magenta
+*color13:               S_bright_magenta
+!! cyan dark/light
+*color6:                S_cyan
+*color14:               S_bright_cyan
+!! white dark/light
+*color7:                S_white
+*color15:               S_bright_white
