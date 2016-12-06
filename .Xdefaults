@@ -59,6 +59,9 @@ URxvt.url-select.underline: true
 URxvt.saveLines: 1000000
 URxvt.pointerBlank: True
 
+URxvt.keysym.M-k: command:\033]720;5\007
+URxvt.keysym.M-j: command:\033]721;5\007
+
 URxvt.font:     xft:Source Code Pro Medium:size=12:antialias=true
 URxvt.boldFont: xft:Source Code Pro Medium:bold:size=12:antialias=true
 
