@@ -49,11 +49,12 @@ URxvt*fading: 15
 URxvt*intensityStyles: True
 
 URxvt.iso14755: False
-URxvt.perl-ext-common: default,matcher,url-select
+URxvt.perl-ext-common: default,matcher,url-select,keyboard-select
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: C1
 URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.keysym.M-s: searchable-scrollback:start
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.url-select.launcher: /usr/bin/xdg-open
 URxvt.url-select.underline: true
 URxvt.saveLines: 1000000
