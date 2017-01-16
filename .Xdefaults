@@ -75,9 +75,14 @@ URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.url-select.launcher: /usr/bin/xdg-open
 URxvt.url-select.underline: true
 
+!These are a little obscure so I'll explain them:
+!Scroll up 5 lines using mod+k
 URxvt.keysym.M-k: command:\033]720;5\007
+!Scroll down 5 lines using mod+j
 URxvt.keysym.M-j: command:\033]721;5\007
+!Scroll up 25 lines using mod+K (that's mod+shift+k)
 URxvt.keysym.M-K: command:\033]720;25\007
+!Scroll down 25 lines using mod+J (that's mod+shift+j)
 URxvt.keysym.M-J: command:\033]721;25\007
 
 URxvt.font:     xft:Source Code Pro Medium:size=12:antialias=true
