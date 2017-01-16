@@ -3,10 +3,25 @@
 !!!!!!!!man urxvtperl
 !!!!!!!!man urxvt
 
-!This colorscheme is as close as I could get it to the terminator
+!You will need the following dependencies. I use arch so these are the
+!names of the pacman packages.  They may be called something else for
+!your distribution:
+!
+!rxvt-unicode
+!rxvt-unicode-terminfo
+!urxvt-perls
+!adobe-source-code-pro-fonts
+
+!This color scheme is as close as I could get it to the terminator
 !solarized dark theme. The transparent background has a different
 !tint though since the original color #001918 looked really weird
 !in urxvt for some reason.
+
+!Also if you are a vim user consider setting background=dark in your
+!~/.vimrc . Vim will probably figure this out on its own based on the
+!color pallet but setting this can make things work better if you are
+!testing lots of different background colors or if you choose to omit
+!the *background: resource.
 
 !black
 #define S_black #2E3030
@@ -42,11 +57,13 @@ URxvt*transparent: True
 URxvt*shading: 50
 URxvt*depth: 32
 URxvt*tintColor: S_background
-URxvt*scrollBar: False
-URxvt*externalBorder: 0
-!URxvt*lineSpace: 2
 URxvt*fading: 15
 URxvt*intensityStyles: True
+
+URxvt*scrollBar: False
+URxvt*externalBorder: 0
+URxvt.saveLines: 1000000
+URxvt.pointerBlank: True
 
 URxvt.iso14755: False
 URxvt.perl-ext-common: default,matcher,url-select,keyboard-select
@@ -57,8 +74,6 @@ URxvt.keysym.M-s: searchable-scrollback:start
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.url-select.launcher: /usr/bin/xdg-open
 URxvt.url-select.underline: true
-URxvt.saveLines: 1000000
-URxvt.pointerBlank: True
 
 URxvt.keysym.M-k: command:\033]720;5\007
 URxvt.keysym.M-j: command:\033]721;5\007
@@ -67,6 +82,8 @@ URxvt.keysym.M-J: command:\033]721;25\007
 
 URxvt.font:     xft:Source Code Pro Medium:size=12:antialias=true
 URxvt.boldFont: xft:Source Code Pro Medium:bold:size=12:antialias=true
+!URxvt*lineSpace: 2
+!URxvt*letterSpace: -1
 
 *background: S_white
 *foreground: S_black
